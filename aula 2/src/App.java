@@ -69,12 +69,30 @@ public class App {
 
     
     public static void editar(Integer id){
+
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
         Aluno aluno = alunos.get(id);
-        System.out.println("o nome atual é: " + aluno.getNome + "digite 1 para editar");
-        Integer (opcao == 1){
-         System.out.println("digite o novo nome");
+        System.out.println("o nome atual é: " + aluno.getNome() + "digite 1 para editar");
+        Integer opcao = sc.nextInt();
+
+        if (opcao == 1){
+            System.out.println("digite o novo nome");
+            aluno.setNome(sc2.nextLine());
+        }
+
+         System.out.println("o idade atual é: " + aluno.getIdade() + "digite 1 para editar");
+
+        if (opcao == 1){
+            System.out.println("digite a novo idade");
+            aluno.setIdade(sc2.nextInt());
+        }
+
+        System.out.println("o curso atual é: " + aluno.getCurso() + "digite 1 para editar");
+
+        if (opcao == 1){
+            System.out.println("digite o novo curso");
+            aluno.setCurso(sc2.nextLine());
         }
     }
 }
