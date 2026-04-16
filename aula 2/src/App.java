@@ -10,7 +10,7 @@ public class App {
         Integer opcao = 0;
         while(opcao != 6){
             
-            System.out.println("Este é um CRUD de alunos! Digite 1 para cadastrar\nDigite 2 para mostrar\\nDigite 3 para deletar"); 
+            System.out.println("Este é um CRUD de alunos! Digite 1 para cadastrar\nDigite 2 para mostrar\\nDigite 3 para deletar\nDigite 4 para filtrar"); 
             opcao = sc.nextInt();
             switch (opcao) {
                 case 1:
