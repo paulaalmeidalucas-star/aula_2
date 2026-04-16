@@ -32,6 +32,10 @@ public class App {
                     Integer id2 = sc.nextInt();
                     editar(id2);
                     break;
+
+                case 5:
+                filtrarPorNome();
+                break;
             }
         }
     }
@@ -93,6 +97,13 @@ public class App {
         if (opcao == 1){
             System.out.println("digite o novo curso");
             aluno.setCurso(sc2.nextLine());
+        }
+
+        System.out.println("o curso atual é: " + aluno.getTurma() + "digite 1 para editar");
+
+        if (opcao == 1){
+            System.out.println("digite a nova turma");
+            aluno.setTurma(sc2.nextLine());
         }
     }
 }
